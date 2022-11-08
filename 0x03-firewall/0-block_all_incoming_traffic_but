@@ -1,0 +1,13 @@
+# Configure ufw firewall
+
+# Set Default Rules:
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+# Allow ssh:
+sudo ufw allow 22
+# Allow HTTP and HTTPS
+sudo ufw allow 80
+sudo ufw allow 443
+
+# Activate ufw
+sudo ufw enable
